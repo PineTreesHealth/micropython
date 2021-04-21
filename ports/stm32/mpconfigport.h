@@ -489,3 +489,6 @@ static inline mp_uint_t disable_irq(void) {
 
 // Needed for MICROPY_PY_URANDOM_SEED_INIT_FUNC.
 uint32_t rng_get(void);
+
+// Needed for RANDOM_STATIC ble address generation
+#define MICROPY_BLUETOOTH_USE_MP_HAL_GET_MAC_STATIC_ADDRESS (1)
